@@ -24,8 +24,8 @@ function philaGoogleCalendarWidget_handler(){
 	foreach($urlArray as $key => $currentURL)
 	{
 		//Working locally we need to use a proxy server to return data. When deploying on server, change to direct read.
-		//$data = PhilaGoogleCalendarGetFeed($currentURL);
-		$data = PhilaGoogleCalendarGetFeedFromProxy($currentURL);
+		$data = PhilaGoogleCalendarGetFeed($currentURL);
+		//$data = PhilaGoogleCalendarGetFeedFromProxy($currentURL);
 		foreach ($data->feed->entry as $item)
 		{
 			$array_item = (array) $item;
