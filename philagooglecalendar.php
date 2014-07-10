@@ -11,7 +11,7 @@ add_shortcode('PhilaGoogleCalendarWidget', 'philaGoogleCalendarWidget_handler');
 function philaGoogleCalendarWidget_handler(){
 
 	//set the total number of items to display
-	$itemLimit = 3;
+	$itemLimit = 10;
 	$eventArray = array();
 
 	//Array of calendar URLs
